@@ -1,23 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import he from 'he';
 
+import Modal from './Modal/Modal';
+import ProductAssets from './ProductAssets';
 import Colors from '../styles/colors';
 
 const ProductWrapper = styled.a`
+  display: block;
   color: ${Colors.black};
   line-height: 1.2rem;
-
-  display: inline-block;
   margin: 0;
   border-radius: 2px;
   position: relative;
   padding: 2rem;
-
   border: 1px solid transparent;
-
   &:hover {
-    opacity: 1;
     border: 1px solid ${Colors.gray};
   }
 `;
@@ -25,11 +23,10 @@ const ProductWrapper = styled.a`
 const Img = styled.img`
   border-radius: 2px;
   width: 100%;
-  margin-bottom: 1rem;
 `;
 
 const Name = styled.p`
-  margin: 0 0 1rem;
+  margin: 1rem 0;
   font-size: 0.9rem;
 `;
 
@@ -37,13 +34,50 @@ const Price = styled.span`
   font-size: 0.9rem;
 `;
 
+const ImgWrapper = styled.div`
+  position: relative;
+`;
+
+const HoverOverlay = styled.div`
+  display: ${(props) => (props.show ? 'block' : 'none')};
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+`;
+
+const saveQuicklook = (save, val) => () => save(val);
+
 const Product = ({ product }) => {
-  const { id, name, thumbnail, priceRange } = product;
+  const [quickLook, setQuickLook] = useState(false);
+  const { id, name, thumbnail, priceRange, hero, images } = product;
   const { selling } = priceRange;
+
+  const decodedName = he.decode(name);
+
   return (
     <ProductWrapper href={`/details/${id}`}>
-      <Img src={thumbnail.href} alt={name} />
-      <Name>{he.decode(name)}</Name>
+      <ImgWrapper
+        onMouseOver={saveQuicklook(setQuickLook, true)}
+        onMouseLeave={saveQuicklook(setQuickLook, false)}>
+        <Img src={thumbnail.href} alt={name} />
+        <HoverOverlay show={quickLook}>
+          <Modal
+            modalProps={{
+              triggerText: 'Quicklook'
+            }}
+            modalContent={
+              <ProductAssets
+                compact
+                name={decodedName}
+                hero={hero}
+                images={images}
+              />
+            }
+          />
+        </HoverOverlay>
+      </ImgWrapper>
+      <Name>{decodedName}</Name>
       <Price>{`$${selling.low} - $${selling.high}`}</Price>
     </ProductWrapper>
   );

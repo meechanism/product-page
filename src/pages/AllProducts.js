@@ -5,12 +5,10 @@ import ProductList from '../components/ProductList';
 
 import productData from '../data/products.json';
 
-const AllProducts = () => {
-  return (
-    <PageWrapper>
-      <ProductList products={productData.groups} />
-    </PageWrapper>
-  );
-};
+const AllProducts = () => (
+  <PageWrapper>
+    <ProductList products={productData.groups} />
+  </PageWrapper>
+);
 
 export default AllProducts;

@@ -2,13 +2,35 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Assumptions
+
+1. I was given the OK from Laura to use any framework of choice and chose React, even though the guidelines said to use `vanilla JavaScript`.
+
+2. The prompt said to `consume the JSON of products`, so I took the liberty of copying the contents of the file as is and import it when needed.
+
+3. The prompt said to build `the product details page with all products`, and that was a little unclear to me. I assumed it implied:
+
+   - there is a master list of all products (a catalog page of _all products_)
+   - there are individual product pages featuring a hero image (the _details page_)
+
+   It seemed more realistic to have a product catalog page that would link to individual product detail pages when a product is clicked. Because of that, I created two primary pages for this mini app.
+
+4. I assume the visual references were provided as ideas/inspiration to work off as a starting point and not mocks to be reproduced.
+
 ## Notable implementation details
 
-- Component based UI
-- 3 break points for product list component
+- Component based UI ([atomic](https://bradfrost.com/blog/post/atomic-web-design/) + declarative)
+- 3 break points for product list page
+- 2 break points for product details page
+- responsive modal lightbox dialog for product Quicklook
 - Handles fake/invalid product ids. Ex: http://localhost:3000/details/fake-product-id
+- Uses [react hooks](https://reactjs.org/docs/hooks-intro.html) to maintain state
 
-## Get started
+## Other side notes
+
+There are non-functional UI elements used to fill in the gaps to make the page look like an e-commerce website (eg: sugar). For example, the links in the primary navigation, footer, and add to cart button.
+
+# Get started
 
 1. Get a copy of the project (clone on github).
 2. Install all dependencies:

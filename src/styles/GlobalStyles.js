@@ -40,9 +40,6 @@ a {
   background-color: transparent;
   text-decoration: none;
   color: ${Colors.primary};
-  &:hover {
-    opacity: 0.75;
-  }
 }
 
 abbr[title] {
@@ -191,6 +188,11 @@ template {
 
 [hidden] {
   display: none;
+}
+
+.scroll-lock {
+  overflow: hidden;
+  margin-right: 17px;
 }
 
 `;

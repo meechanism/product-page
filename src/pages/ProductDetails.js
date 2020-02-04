@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import he from 'he';
 
 import PageWrapper from '../components/PageWrapper';
-import ProductHero from '../components/ProductHero';
+import ProductAssets from '../components/ProductAssets';
 import Button from '../components/Button';
 import ProductNotFound from './ProductNotFound';
 
@@ -15,6 +15,9 @@ const Details = styled.div``;
 
 const ProductName = styled.h2`
   font-size: 2rem;
+  ${MediaQuery.medium`
+    font-size: 1.5rem;
+  `};
 `;
 
 const ProductMain = styled.div`
@@ -28,10 +31,20 @@ const ProductMain = styled.div`
 `;
 
 const Price = styled.span`
+  display: block;
   font-size: 1.5rem;
+  margin: 0 0 4rem;
+  ${MediaQuery.medium`
+    font-size: 1rem;
+  `};
 `;
 
+const onAddToCart = (save) => () => {
+  save(true);
+};
+
 const ProductDetails = () => {
+  const [addedToCart, setAddedToCart] = useState(false);
   const { productId } = useParams();
   const product = getProductById(productId);
 
@@ -40,14 +53,17 @@ const ProductDetails = () => {
 
   const { name, hero, images, priceRange } = product;
   const { selling } = priceRange;
+  const decodedName = he.decode(name);
   return (
     <PageWrapper>
       <ProductMain>
-        <ProductHero hero={hero} images={images} />
+        <ProductAssets name={decodedName} hero={hero} images={images} />
         <Details>
-          <ProductName>{he.decode(name)}</ProductName>
+          <ProductName>{decodedName}</ProductName>
           <Price>{`$${selling.low} - $${selling.high}`}</Price>
-          <Button>Add to cart</Button>
+          <Button disabled={addedToCart} onClick={onAddToCart(setAddedToCart)}>
+            {addedToCart ? `Added!` : `Add to cart`}
+          </Button>
         </Details>
       </ProductMain>
     </PageWrapper>

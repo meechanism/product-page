@@ -3,19 +3,30 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import Colors from '../styles/colors';
+import MediaQuery from '../styles/media-queries';
 
 const Branding = styled.span`
   display: inline-block;
   font-weight: bold;
   font-size: 3rem;
+  border-left: 1rem solid ${Colors.secondary};
+  padding-left: 2rem;
+
+  ${MediaQuery.medium`
+    font-size: 1.5rem;
+  `}
 `;
 
 const HeaderWrapper = styled.div`
   display: flex;
-  padding: 2rem;
+  padding: 1.5rem 1.5rem 1.5rem 0;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid ${Colors.gray};
+
+  ${MediaQuery.medium`
+    padding: 1rem 1rem 1rem 0;
+  `}
 `;
 
 const Nav = styled.nav``;
@@ -38,6 +49,10 @@ const NavItem = styled.li`
     &:hover {
       color: ${Colors.primary};
     }
+
+    ${MediaQuery.medium`
+      padding: 1rem;
+  `}
   }
 `;
 
@@ -55,12 +70,6 @@ const MainHeader = () => {
           </NavItem>
           <NavItem>
             <Link to={'/'}>Bedroom</Link>
-          </NavItem>
-          <NavItem>
-            <Link to={'/'}>Kitchen</Link>
-          </NavItem>
-          <NavItem>
-            <Link to={'/'}>Bathroom</Link>
           </NavItem>
         </NavList>
       </Nav>
