@@ -1,5 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Product component hover overlay should render quicklook button style with hidden state 1`] = `
+.c0 {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Product component hover overlay should render quicklook button style with shown state 1`] = `
+.c0 {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Product component should render 1`] = `
 <styled.a
   href="/details/belgian-linen-embroidery-duvet-cover-shams-slate-white-b3024"

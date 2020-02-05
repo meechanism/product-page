@@ -1,5 +1,7 @@
 import React from 'react';
 import he from 'he';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 
 import Product, {
   saveQuicklook,
@@ -60,6 +62,18 @@ describe('Product component', () => {
       const output = shallow(<Product product={testProduct} />);
       const modal = output.find(Modal);
       expect(modal.exists()).toBeTruthy();
+    });
+
+    it('should render quicklook button style with hidden state', () => {
+      const tree = renderer.create(<HoverOverlay show={false} />).toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(tree).toHaveStyleRule('display', 'none');
+    });
+
+    it('should render quicklook button style with shown state', () => {
+      const tree = renderer.create(<HoverOverlay show={true} />).toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(tree).toHaveStyleRule('display', 'block');
     });
   });
 });

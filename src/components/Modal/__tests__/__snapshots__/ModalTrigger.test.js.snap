@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalTrigger component should render 1`] = `
+<styled.button
+  onClick={[Function]}
+  secondary={true}
+/>
+`;

@@ -1,59 +1,60 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import ModalContent from './ModalContent';
 import ModalTrigger from './ModalTrigger';
 
-export class Modal extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isShown: false
-    };
+export const onKeyDown = (closeFn) => (event) => {
+  if (event.keyCode === 27) {
+    closeFn();
   }
-  showModal = () => {
-    this.setState({ isShown: true }, () => {
-      this.closeButton.focus();
-    });
-    this.toggleScrollLock();
-  };
-  closeModal = () => {
-    this.setState({ isShown: false });
-    this.TriggerButton.focus();
-    this.toggleScrollLock();
-  };
-  onKeyDown = (event) => {
-    if (event.keyCode === 27) {
-      this.closeModal();
-    }
-  };
-  onClickOutside = (event) => {
-    if (this.modal && this.modal.contains(event.target)) return;
-    this.closeModal();
-  };
+};
 
-  toggleScrollLock = () => {
-    document.querySelector('html').classList.toggle('scroll-lock');
-  };
-  render() {
-    return (
-      <>
-        <ModalTrigger
-          showModal={this.showModal}
-          buttonRef={(n) => (this.TriggerButton = n)}
-          triggerText={this.props.modalProps.triggerText}
+export const toggleScrollLock = () => {
+  document.querySelector('html').classList.toggle('scroll-lock');
+};
+
+export const showModal = (showFn, scrollLock, closeButton) => () => {
+  showFn(true);
+  closeButton && closeButton.focus();
+  scrollLock();
+};
+
+export const closeModal = (showFn, scrollLock, triggerButton) => () => {
+  showFn(false);
+  triggerButton && triggerButton.focus();
+  scrollLock();
+};
+
+export const onClickOutside = (closeFn, modal) => (event) => {
+  if (modal && modal.contains(event.target)) return;
+  closeFn();
+};
+
+export const Modal = ({ modalProps, modalContent }) => {
+  const [isShown, setIsShown] = useState(false);
+  const [modal, setModal] = useState(null);
+  const [triggerButton, setTriggerButton] = useState(null);
+  const [closeButton, setCloseButton] = useState(null);
+
+  const closeFn = closeModal(setIsShown, toggleScrollLock, triggerButton);
+  return (
+    <>
+      <ModalTrigger
+        showModal={showModal(setIsShown, toggleScrollLock, closeButton)}
+        buttonRef={(n) => setTriggerButton(n)}
+        triggerText={modalProps.triggerText}
+      />
+      {isShown ? (
+        <ModalContent
+          modalRef={(n) => setModal(n)}
+          buttonRef={(n) => setCloseButton(n)}
+          closeModal={closeFn}
+          content={modalContent}
+          onKeyDown={onKeyDown(closeFn)}
+          onClickOutside={onClickOutside(closeFn, modal)}
         />
-        {this.state.isShown ? (
-          <ModalContent
-            modalRef={(n) => (this.modal = n)}
-            buttonRef={(n) => (this.closeButton = n)}
-            closeModal={this.closeModal}
-            content={this.props.modalContent}
-            onKeyDown={this.onKeyDown}
-            onClickOutside={this.onClickOutside}
-          />
-        ) : null}
-      </>
-    );
-  }
-}
+      ) : null}
+    </>
+  );
+};
 
 export default Modal;

@@ -50,8 +50,7 @@ export const ArrowContainer = styled.a`
   height: 3vmin;
   background: white;
   color: black;
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 1;
     color: ${Colors.primary};
     i {

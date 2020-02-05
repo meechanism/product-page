@@ -4,9 +4,8 @@ import FocusTrap from 'focus-trap-react';
 import styled from 'styled-components';
 
 import Colors from '../../styles/colors';
-import MediaQuery from '../../styles/media-queries';
 
-const ModalWrapper = styled.aside.attrs({
+export const ModalWrapper = styled.aside.attrs({
   tag: 'aside',
   role: 'dialog',
   tabIndex: -1,
@@ -22,7 +21,7 @@ const ModalWrapper = styled.aside.attrs({
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-const CloseButton = styled.button.attrs((props) => ({
+export const CloseButton = styled.button.attrs((props) => ({
   'aria-label': 'Close Modal',
   'aria-labelledby': 'close-modal'
 }))`
@@ -43,7 +42,7 @@ const CloseButton = styled.button.attrs((props) => ({
   }
 `;
 
-const ModalArea = styled.div`
+export const ModalArea = styled.div`
   background-color: ${Colors.trueWhite};
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -52,20 +51,15 @@ const ModalArea = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-
   left: 50%;
   top: 50%;
   height: auto;
   transform: translate(-50%, -50%);
   max-width: 30em;
   max-height: calc(100% - 1em);
-
-  ${MediaQuery.small`
-    width: 100%;
-  `};
 `;
 
-const CloseIcon = styled.svg`
+export const CloseIcon = styled.svg`
   width: 25px;
   height: 25px;
   fill: transparent;
@@ -74,7 +68,7 @@ const CloseIcon = styled.svg`
   stroke-width: 2;
 `;
 
-const CloseVisual = styled.span`
+export const CloseVisual = styled.span`
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
   height: 1px !important;

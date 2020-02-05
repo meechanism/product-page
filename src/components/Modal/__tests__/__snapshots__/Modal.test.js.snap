@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component should render 1`] = `
+<Fragment>
+  <ModalTrigger
+    buttonRef={[Function]}
+    showModal={[Function]}
+    triggerText="Open"
+  />
+</Fragment>
+`;

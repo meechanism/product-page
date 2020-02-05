@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button';
 
-const onClick = (showModal) => (e) => {
+export const onClick = (showModal) => (e) => {
   e.preventDefault();
   showModal();
 };
