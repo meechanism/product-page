@@ -15,7 +15,7 @@ const Img = styled.img`
   border-radius: 2px;
 `;
 
-const ImgWrapper = styled.a`
+export const ImgWrapper = styled.a`
   display: block;
   width: 95px;
   padding: 0.5rem;
@@ -27,28 +27,26 @@ const ImgWrapper = styled.a`
   border: 1px solid ${(props) => (props.active ? Colors.gray : 'transparent')};
 `;
 
-const saveImg = (save, index) => (e) => {
-  e.preventDefault();
+export const saveImg = (save, index) => (e) => {
+  e && e.preventDefault();
   save(index);
 };
 
-const ProductImgReel = ({ images, setCurrImgIndex, currImgIndex, compact }) => {
-  return (
-    <ImgReelWrapper>
-      {images.map((currImg, i) => {
-        const key = `product-image-${i}`;
-        return (
-          <ImgWrapper
-            href=""
-            key={key}
-            onClick={saveImg(setCurrImgIndex, i)}
-            active={currImgIndex === i}>
-            <Img src={currImg.href} alt={key} />
-          </ImgWrapper>
-        );
-      })}
-    </ImgReelWrapper>
-  );
-};
+const ProductImgReel = ({ images, setCurrImgIndex, currImgIndex }) => (
+  <ImgReelWrapper>
+    {images.map((currImg, i) => {
+      const key = `product-image-${i}`;
+      return (
+        <ImgWrapper
+          href=""
+          key={key}
+          onClick={saveImg(setCurrImgIndex, i)}
+          active={currImgIndex === i}>
+          <Img src={currImg.href} alt={key} />
+        </ImgWrapper>
+      );
+    })}
+  </ImgReelWrapper>
+);
 
 export default ProductImgReel;

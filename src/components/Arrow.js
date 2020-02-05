@@ -5,25 +5,25 @@ import Colors from '../styles/colors';
 import MediaQuery from '../styles/media-queries';
 
 const sharedStyles = `
-    position: absolute;
-    top: 50%;
-    width: 3vmin;
-    height: 3vmin;
-    background: transparent;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    box-shadow: 0 0 0 lightgray;
-    transition: all 200ms ease;
+  position: absolute;
+  top: 50%;
+  width: 3vmin;
+  height: 3vmin;
+  background: transparent;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  box-shadow: 0 0 0 lightgray;
+  transition: all 200ms ease;
 
-    &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-40%,-60%) rotate(45deg);
-        width: 200%;
-        height: 200%;
-    }
+  &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-40%,-60%) rotate(45deg);
+      width: 200%;
+      height: 200%;
+  }
 `;
 
 export const IconLeft = styled.i`
@@ -38,7 +38,7 @@ export const IconRight = styled.i`
   transform: translate3d(0, -50%, 0) rotate(45deg);
 `;
 
-const ArrowContainer = styled.a`
+export const ArrowContainer = styled.a`
   opacity: 0.75;
   font-size: 2rem;
   position: absolute;

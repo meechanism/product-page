@@ -1,0 +1,761 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList component should render 1`] = `
+<Fragment>
+  <styled.h2>
+    Shopping: 
+    bed sheets
+  </styled.h2>
+  <styled.p>
+    Showing 
+    10
+     products
+  </styled.p>
+  <styled.div>
+    <Product
+      key="belgian-linen-embroidery-duvet-cover-shams-slate-white-b3024"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-s-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-embroidery-duvet-cover-shams-slate-white-b3024",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-6-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0012/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-embroidery-duvet-cover-shams-slate-white-b3024/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Ladder Stripe Embroidery Duvet Cover &amp; Shams - Slate/White",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 329,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-embroidery-duvet-cover-shams-slate-white-b3024",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-s-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-embroidery-duvet-cover-shams-white-flax-b3025"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0006/img2m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-embroidery-duvet-cover-shams-white-flax-b3025",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-5-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-9-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-embroidery-duvet-cover-shams-white-flax-b3025/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Ladder Stripe Embroidery Duvet Cover &amp; Shams - White/Flax",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 329,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-embroidery-duvet-cover-shams-white-flax-b3025",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-8-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-embroidery-duvet-cover-shams-white-midnight-b3026"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-embroidery-duvet-cover-shams-white-midnight-b3026",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-2-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-9-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-embroidery-duvet-cover-shams-white-midnight-b3026/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Ladder Stripe Embroidery Duvet Cover &amp; Shams - White/Midnight",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 329,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-embroidery-duvet-cover-shams-white-midnight-b3026",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-embroidery-duvet-shams-white-horseradish-b3027"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0009/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-embroidery-duvet-shams-white-horseradish-b3027",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0006/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-5-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-embroidery-duvet-shams-white-horseradish-b3027/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Ladder Stripe Embroidery Duvet Cover &amp; Shams - White/Dark Horseradish",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 329,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-embroidery-duvet-shams-white-horseradish-b3027",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0009/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-ladder-stripe-embroidery-sheet-set-b3028"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0010/belgian-linen-ladder-stripe-embroidery-sheet-set-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-ladder-stripe-embroidery-sheet-set-b3028",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0013/belgian-linen-ladder-stripe-embroidery-sheet-set-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-sheet-set-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-sheet-set-2-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-ladder-stripe-embroidery-sheet-set-b3028/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Ladder Stripe Embroidery Sheet Set",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 349,
+              "low": 269,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-ladder-stripe-embroidery-sheet-set-b3028",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0010/belgian-linen-ladder-stripe-embroidery-sheet-set-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-merrow-edge-duvet-shams-white-misty-rose-b3036"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202005/0006/belgian-linen-merrow-edge-duvet-cover-shams-white-misty-ro-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-merrow-edge-duvet-shams-white-misty-rose-b3036",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-merrow-edge-duvet-cover-shams-7-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-merrow-edge-duvet-shams-white-misty-rose-b3036/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Merrow Edge Duvet Cover &amp; Shams - White/Misty Rose",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 299,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-merrow-edge-duvet-shams-white-misty-rose-b3036",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202005/0006/belgian-linen-merrow-edge-duvet-cover-shams-white-misty-ro-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-merrow-edge-duvet-shams-white-iron-gate-b3035"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0013/belgian-linen-merrow-edge-duvet-cover-shams-white-iron-gat-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-merrow-edge-duvet-shams-white-iron-gate-b3035",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0013/belgian-linen-merrow-edge-duvet-cover-shams-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-merrow-edge-duvet-shams-white-iron-gate-b3035/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Merrow Edge Duvet Cover &amp; Shams - White/Iron Gate",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 299,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-merrow-edge-duvet-shams-white-iron-gate-b3035",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0013/belgian-linen-merrow-edge-duvet-cover-shams-white-iron-gat-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-merrow-duvet-shams-white-dark-horseradish-b3034"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-6-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-merrow-duvet-shams-white-dark-horseradish-b3034",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-3-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-merrow-duvet-shams-white-dark-horseradish-b3034/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Merrow Edge Duvet Cover &amp; Shams - White/Dark Horseradish",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 299,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-merrow-duvet-shams-white-dark-horseradish-b3034",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-w-6-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-merrow-edge-duvet-cover-shams-flax-midnight-b3033"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-merrow-edge-duvet-cover-shams-1-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-merrow-edge-duvet-cover-shams-flax-midnight-b3033",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-merrow-edge-duvet-cover-shams-flax-midnight-1-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-merrow-edge-duvet-cover-shams-flax-midnight-b3033/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Merrow Edge Duvet Cover &amp; Shams - Flax/Midnight",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 299,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-merrow-edge-duvet-cover-shams-flax-midnight-b3033",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-merrow-edge-duvet-cover-shams-1-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+    <Product
+      key="belgian-linen-merrow-duvet-cover-shams-flax-terracotta-b3032"
+      product={
+        Object {
+          "flags": Array [
+            Object {
+              "bopisSuppress": false,
+              "id": "newcore",
+              "rank": 3,
+            },
+            Object {
+              "bopisSuppress": false,
+              "id": "fairTrade",
+              "rank": 9,
+            },
+          ],
+          "hero": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-merrow-edge-duvet-cover-shams-flax-terracott-2-m.jpg",
+            "meta": "",
+            "rel": "hero",
+            "size": "m",
+            "width": 363,
+          },
+          "id": "belgian-linen-merrow-duvet-cover-shams-flax-terracotta-b3032",
+          "images": Array [
+            Object {
+              "alt": "",
+              "height": 363,
+              "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-merrow-edge-duvet-cover-shams-flax-terracott-3-m.jpg",
+              "meta": "",
+              "rel": "althero",
+              "size": "m",
+              "width": 363,
+            },
+          ],
+          "links": Object {
+            "www": "https://www.westelm.com/products/belgian-linen-merrow-duvet-cover-shams-flax-terracotta-b3032/",
+          },
+          "messages": Array [],
+          "name": "Belgian Linen Merrow Edge Duvet Cover &amp; Shams - Flax/Terracotta",
+          "priceRange": Object {
+            "selling": Object {
+              "high": 299,
+              "low": 44,
+            },
+          },
+          "reviews": Object {
+            "averageRating": 0,
+            "id": "belgian-linen-merrow-duvet-cover-shams-flax-terracotta-b3032",
+            "likelihood": 0,
+            "recommendationCount": 0,
+            "reviewCount": 0,
+            "type": "GROUP_REVIEWS",
+          },
+          "swatches": Array [],
+          "thumbnail": Object {
+            "alt": "",
+            "height": 363,
+            "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-merrow-edge-duvet-cover-shams-flax-terracott-2-m.jpg",
+            "meta": "",
+            "rel": "thumbnail",
+            "size": "m",
+            "width": 363,
+          },
+        }
+      }
+    />
+  </styled.div>
+</Fragment>
+`;

@@ -11,9 +11,7 @@ import ProductNotFound from './ProductNotFound';
 import { getProductById } from '../utilities/product';
 import MediaQuery from '../styles/media-queries';
 
-const Details = styled.div``;
-
-const ProductName = styled.h2`
+export const ProductName = styled.h2`
   font-size: 2rem;
   ${MediaQuery.medium`
     font-size: 1.5rem;
@@ -30,7 +28,7 @@ const ProductMain = styled.div`
   `};
 `;
 
-const Price = styled.span`
+export const Price = styled.span`
   display: block;
   font-size: 1.5rem;
   margin: 0 0 4rem;
@@ -39,7 +37,7 @@ const Price = styled.span`
   `};
 `;
 
-const onAddToCart = (save) => () => {
+export const onAddToCart = (save) => () => {
   save(true);
 };
 
@@ -58,13 +56,13 @@ const ProductDetails = () => {
     <PageWrapper>
       <ProductMain>
         <ProductAssets name={decodedName} hero={hero} images={images} />
-        <Details>
+        <div>
           <ProductName>{decodedName}</ProductName>
           <Price>{`$${selling.low} - $${selling.high}`}</Price>
           <Button disabled={addedToCart} onClick={onAddToCart(setAddedToCart)}>
             {addedToCart ? `Added!` : `Add to cart`}
           </Button>
-        </Details>
+        </div>
       </ProductMain>
     </PageWrapper>
   );

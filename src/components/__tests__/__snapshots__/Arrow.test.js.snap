@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Arrow component renders left arrow 1`] = `
+<styled.a
+  href=""
+  onClick={[MockFunction]}
+>
+  <styled.i />
+</styled.a>
+`;
+
+exports[`Arrow component renders right arrow 1`] = `
+<styled.a
+  href=""
+  onClick={[MockFunction]}
+  right={true}
+>
+  <styled.i />
+</styled.a>
+`;

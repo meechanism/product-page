@@ -48,10 +48,7 @@ const ModalArea = styled.div`
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;

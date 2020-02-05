@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageWrapper component should render 1`] = `
+<Fragment>
+  <Memo(GlobalStyleComponent) />
+  <MainHeader />
+  <styled.main>
+    <p>
+      test
+    </p>
+  </styled.main>
+  <Footer />
+</Fragment>
+`;

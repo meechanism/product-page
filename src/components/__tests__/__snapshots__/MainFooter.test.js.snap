@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainFooter component should render 1`] = `
+<styled.footer>
+  <styled.p>
+    © 2020 Elmwest. All Rights Reserved.
+  </styled.p>
+  <styled.p>
+    <a
+      href="/"
+    >
+      Terms and Conditions
+    </a>
+     | 
+    <a
+      href="/"
+    >
+      Privacy Policy
+    </a>
+     |
+     
+    <a
+      href="/"
+    >
+      Legal Statement
+    </a>
+  </styled.p>
+</styled.footer>
+`;

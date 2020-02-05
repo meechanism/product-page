@@ -20,17 +20,17 @@ const ProductWrapper = styled.a`
   }
 `;
 
-const Img = styled.img`
+export const Img = styled.img`
   border-radius: 2px;
   width: 100%;
 `;
 
-const Name = styled.p`
+export const Name = styled.p`
   margin: 1rem 0;
   font-size: 0.9rem;
 `;
 
-const Price = styled.span`
+export const Price = styled.span`
   font-size: 0.9rem;
 `;
 
@@ -38,7 +38,7 @@ const ImgWrapper = styled.div`
   position: relative;
 `;
 
-const HoverOverlay = styled.div`
+export const HoverOverlay = styled.div`
   display: ${(props) => (props.show ? 'block' : 'none')};
   position: absolute;
   left: 0;
@@ -46,7 +46,7 @@ const HoverOverlay = styled.div`
   width: 100%;
 `;
 
-const saveQuicklook = (save, val) => () => save(val);
+export const saveQuicklook = (save, val) => () => save(val);
 
 const Product = ({ product }) => {
   const [quickLook, setQuickLook] = useState(false);

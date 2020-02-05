@@ -20,11 +20,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Notable implementation details
 
 - Component based UI ([atomic](https://bradfrost.com/blog/post/atomic-web-design/) + declarative)
-- 3 break points for product list page
-- 2 break points for product details page
-- responsive modal lightbox dialog for product Quicklook
-- Handles fake/invalid product ids. Ex: http://localhost:3000/details/fake-product-id
-- Uses [react hooks](https://reactjs.org/docs/hooks-intro.html) to maintain state
+- Responsive product catalog page
+- Responsive product details page
+- Responsive modal lightbox dialog for product Quicklook
+- Handles fake/invalid product ids (ex: http://localhost:3000/details/fake-product-id)
+- Basic written tests + snapshots for pages, components, and utilities (see below for instructions to run)
 
 ## Other side notes
 

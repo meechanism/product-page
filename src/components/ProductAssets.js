@@ -16,13 +16,13 @@ const ProductAssetsWrapper = styled.div`
   `};
 `;
 
-const HeroImg = styled.img`
+export const HeroImg = styled.img`
   width: 100%;
   border-radius: 2px;
   margin: ${(props) => (props.compact ? '0 0 1rem ' : '0 0 2rem')};
 `;
 
-const getNext = (save, index, totalAssets) => (e) => {
+export const getNext = (save, index, totalAssets) => (e) => {
   e.preventDefault();
   if (index === totalAssets - 1) {
     save(0);
@@ -31,7 +31,7 @@ const getNext = (save, index, totalAssets) => (e) => {
   }
 };
 
-const getPrev = (save, index, totalAssets) => (e) => {
+export const getPrev = (save, index, totalAssets) => (e) => {
   e.preventDefault();
   if (index === 0) {
     save(totalAssets - 1);

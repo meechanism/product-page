@@ -5,7 +5,7 @@ import Product from './Product';
 import Text from './Text';
 import MediaQuery from '../styles/media-queries';
 
-const ProductContainer = styled.div`
+export const ProductContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -19,7 +19,7 @@ const ProductContainer = styled.div`
   `};
 `;
 
-const ProductListHeader = styled.h2`
+export const ProductListHeader = styled.h2`
   font-size: 1.5rem;
   ${MediaQuery.small`
     font-size: 1rem;
@@ -27,19 +27,16 @@ const ProductListHeader = styled.h2`
   `};
 `;
 
-const ProductList = ({ productType = 'bed sheets', products }) => {
-  return (
-    <>
-      <ProductListHeader>Shopping: {productType}</ProductListHeader>
-      <Text muted>Showing {products.length} products</Text>
-
-      <ProductContainer>
-        {products.map((product) => (
-          <Product key={product.id} product={product} />
-        ))}
-      </ProductContainer>
-    </>
-  );
-};
+const ProductList = ({ productType = 'bed sheets', products }) => (
+  <>
+    <ProductListHeader>Shopping: {productType}</ProductListHeader>
+    <Text>Showing {products.length} products</Text>
+    <ProductContainer>
+      {products.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
+    </ProductContainer>
+  </>
+);
 
 export default ProductList;

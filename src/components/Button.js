@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 import Colors from '../styles/colors';
 
-const getBgColor = (props) => {
+export const getBgColor = (props = {}) => {
   if (props.disabled) return Colors.gray;
   if (props.secondary) return Colors.white;
   return Colors.primary;
 };
 
-const getTxtColor = (props) => {
+export const getTxtColor = (props = {}) => {
   if (props.secondary) return Colors.black;
   return Colors.white;
 };
 
-const getHoverTxtColor = (props) => {
+export const getHoverTxtColor = (props = {}) => {
   if (props.secondary) return Colors.primary;
   return Colors.white;
 };

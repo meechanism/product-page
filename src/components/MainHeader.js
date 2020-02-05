@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Colors from '../styles/colors';
 import MediaQuery from '../styles/media-queries';
 
-const Branding = styled.span`
+export const Branding = styled.span`
   display: inline-block;
   font-weight: bold;
   font-size: 3rem;
@@ -17,7 +17,7 @@ const Branding = styled.span`
   `}
 `;
 
-const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.div`
   display: flex;
   padding: 1.5rem 1.5rem 1.5rem 0;
   justify-content: space-between;
@@ -29,15 +29,13 @@ const HeaderWrapper = styled.div`
   `}
 `;
 
-const Nav = styled.nav``;
-
-const NavList = styled.ul`
+export const NavList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
 `;
 
-const NavItem = styled.li`
+export const NavItem = styled.li`
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -56,25 +54,23 @@ const NavItem = styled.li`
   }
 `;
 
-const MainHeader = () => {
-  return (
-    <HeaderWrapper>
-      <Branding>Elmwest</Branding>
-      <Nav>
-        <NavList>
-          <NavItem>
-            <Link to="/">Home</Link>
-          </NavItem>
-          <NavItem>
-            <Link to={'/'}>Shop</Link>
-          </NavItem>
-          <NavItem>
-            <Link to={'/'}>Bedroom</Link>
-          </NavItem>
-        </NavList>
-      </Nav>
-    </HeaderWrapper>
-  );
-};
+const MainHeader = () => (
+  <HeaderWrapper>
+    <Branding>Elmwest</Branding>
+    <nav>
+      <NavList>
+        <NavItem>
+          <Link to="/">Home</Link>
+        </NavItem>
+        <NavItem>
+          <Link to={'/'}>Shop</Link>
+        </NavItem>
+        <NavItem>
+          <Link to={'/'}>Bedroom</Link>
+        </NavItem>
+      </NavList>
+    </nav>
+  </HeaderWrapper>
+);
 
 export default MainHeader;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImgReel component should render 1`] = `
+<styled.div>
+  <styled.a
+    active={true}
+    href=""
+    key="product-image-0"
+    onClick={[Function]}
+  >
+    <styled.img
+      alt="product-image-0"
+      src="https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-6-m.jpg"
+    />
+  </styled.a>
+  <styled.a
+    active={false}
+    href=""
+    key="product-image-1"
+    onClick={[Function]}
+  >
+    <styled.img
+      alt="product-image-1"
+      src="https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0012/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-m.jpg"
+    />
+  </styled.a>
+</styled.div>
+`;

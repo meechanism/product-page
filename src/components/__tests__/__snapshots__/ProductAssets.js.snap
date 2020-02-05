@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductAssets component should render 1`] = `
+<styled.div>
+  <styled.img
+    alt="Belgian Linen Ladder Stripe Embroidery Duvet Cover &amp; Shams - Slate/White"
+    src="https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-s-m.jpg"
+  />
+  <ProductImgReel
+    currImgIndex={0}
+    images={
+      Array [
+        Object {
+          "alt": "",
+          "height": 363,
+          "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-s-m.jpg",
+          "meta": "",
+          "rel": "hero",
+          "size": "m",
+          "width": 363,
+        },
+        Object {
+          "alt": "",
+          "height": 363,
+          "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0005/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-6-m.jpg",
+          "meta": "",
+          "rel": "althero",
+          "size": "m",
+          "width": 363,
+        },
+        Object {
+          "alt": "",
+          "height": 363,
+          "href": "https://www.westelm.com/weimgs/ab/images/wcm/products/202003/0012/belgian-linen-ladder-stripe-embroidery-duvet-cover-shams-m.jpg",
+          "meta": "",
+          "rel": "althero",
+          "size": "m",
+          "width": 363,
+        },
+      ]
+    }
+    name="Belgian Linen Ladder Stripe Embroidery Duvet Cover &amp; Shams - Slate/White"
+    setCurrImgIndex={[Function]}
+  />
+</styled.div>
+`;

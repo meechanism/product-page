@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductNotFound page should render 1`] = `
+<_default>
+  <h1>
+    Oops!
+  </h1>
+  <styled.p>
+    Sorry, we couldn't find that product. Please contact customer support if you need assistance.
+  </styled.p>
+  <styled.p>
+    In the meantime, you can 
+    <Link
+      to="/"
+    >
+      continue shopping
+    </Link>
+    .
+  </styled.p>
+</_default>
+`;

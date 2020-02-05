@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainHeader component should render 1`] = `
+<styled.div>
+  <styled.span>
+    Elmwest
+  </styled.span>
+  <nav>
+    <styled.ul>
+      <styled.li>
+        <Link
+          to="/"
+        >
+          Home
+        </Link>
+      </styled.li>
+      <styled.li>
+        <Link
+          to="/"
+        >
+          Shop
+        </Link>
+      </styled.li>
+      <styled.li>
+        <Link
+          to="/"
+        >
+          Bedroom
+        </Link>
+      </styled.li>
+    </styled.ul>
+  </nav>
+</styled.div>
+`;
