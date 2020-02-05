@@ -62,3 +62,10 @@ $ npm run build
 ```
 
 This builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+
+The build folder is ready to be deployed. You may serve it with a static server for testing:
+
+```sh
+  $ npm install -g serve
+  $ serve -s build
+```
